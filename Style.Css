@@ -1,3 +1,31 @@
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1170px;
+    margin: 0 auto;
+    height: 100px;
+}
+.logo{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+.Color-primary{
+    color:#FF5400;
+}
+nav > ul{
+    display: flex;
+}
+nav li{
+    list-style: none;
+    margin-right: 44px;
+}
+nav a{
+    text-decoration: none;
+    color: #424247;
+}
 * {
     margin: 0;
     padding: 0;
