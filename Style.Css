@@ -1,3 +1,4 @@
+/* nav bar started */
 nav{
     display: flex;
     justify-content: space-between;
@@ -26,6 +27,93 @@ nav a{
     text-decoration: none;
     color: #424247;
 }
+/*
+@media screen and (max-width:475px) {
+    header{
+        padding: 20px;
+    }
+    nav{
+        flex-direction: column;
+    }  */
+
+    @media screen and (max-width:475px) {
+    header{
+        padding: 20px;
+        width: 450px;
+    }
+    nav{
+        flex-direction: column;
+        width: 90%;
+    }
+    nav ul{
+        width: 400px;
+    }
+}
+
+/* nav bar ended */
+/*  feature seclection started */
+.facts{
+    display: flex;
+    margin-top: 130px;
+    gap: 50px;
+    width: 1170px;
+    margin: 0 auto;
+    
+
+}
+
+.feature-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.feature-title{
+    font-weight: 400;
+    line-height: 26px;
+    word-wrap: break-word;
+    font-size: 16px;
+    color: #5A5A5D;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.feature-content ul{
+    display: inline;
+    text-align: left;    
+}
+.feature-content li{
+    list-style: circle;
+    position: relative;
+    left: 20px;
+    
+}
+.feature-content a{
+    text-decoration: none;
+    color: #5A5A5D;
+    
+}
+.feature-button{
+    background-color: rgba(255, 84, 0, 1);
+    color: rgba(255, 255, 255, 1);
+    border-radius: 8px;
+    width: 174px;
+    padding: 17px;
+    font-size: 20px;
+    text-align: center;
+    position: relative;
+    border: none;
+    
+}
+@media(max-width: 475px){
+.facts{
+    width: 450px;
+    flex-direction: column;
+}
+}
+
+/* gallery started */
 * {
     margin: 0;
     padding: 0;
@@ -46,7 +134,7 @@ body {
 .heading h2{
     color: black;
     font-size: 40px;
-    font-weight: 800;
+    font-weight: bold;
 }
 .item {
     position: relative;
@@ -113,6 +201,7 @@ body {
     grid-column: auto/span 7;
 }
 @media(max-width: 475px) {
+   
     .container{
         width: 450px;
     }
@@ -128,4 +217,119 @@ body {
     .gallery .item{
         grid-column: auto;
     }
+}
+/* gallery ended */
+
+/* fact-card-container Started */
+.Why-Choose-Us{
+    width: 1170px;
+    margin: 0 auto;
+}
+
+.section-title{
+    text-align: center;
+    width: 60%;
+    margin: 1rem auto;
+    color: rgba(19, 19, 24, 1);
+    font-size: 40px;
+    font-weight: 800;
+}
+.text-light-gray{
+    text-align: center;
+    margin: 10px auto;
+}
+.fact-card-container{
+   position: absolute;
+   display:contents;
+   
+}
+.fact-card-container .card{
+    border-radius: 16px;
+    background-color: rgba(251, 181, 99, 0.2);
+    width: 60%;
+    position: relative;
+}
+.fact-card-container .card-title{
+    font-weight: 600;
+    margin-left: 25px;
+    
+    
+}
+.fact-card-container .card-stats{
+    font-size: 22px;
+    color: rgba(19, 19, 24, 1);
+    margin-left: 25px;
+    
+}
+.fact-card-container .card img{
+    width: 5%;
+    margin: 25px 25px;
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.card-1 {
+    grid-column: auto/span 6;
+    background-color: rgba(251, 181, 99, 0.2);
+}
+
+.card-2 {
+    grid-column: auto/span 6;
+    background-color: rgba(41, 206, 246, 0.2);
+}
+
+.card-3 {
+    grid-column: auto/span 12;
+    background-color: rgba(233, 68, 68, 0.2);
+}
+
+
+.logo-footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.sponsors{
+    width: 1170px;
+    margin: 0 auto; 
+    background-color: rgba(19, 19, 24, 0.05);
+    padding: 10px;
+    
+}
+.sponsors-image{
+    width: 25px;
+    height: 25px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: auto;
+    gap: 25px;
+}
+.footer{
+    color: rgba(19, 19, 24, 1);
+    display: flex;
+    justify-content: center;
+    
+    border-top: 10px black;
+    
+}
+.footer-main{
+    width: 1170px;
+    margin:0 auto; 
+    background-color: rgba(19, 19, 24, 0.05);
+    padding: 24px;
+    align-items: center;
+}
+@media(max-width: 475px) {
+   .sponsors{
+    width: 450px;
+   }
+   .footer-main{
+    width: 450px;
+   }
 }
